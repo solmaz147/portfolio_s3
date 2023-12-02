@@ -1,18 +1,33 @@
 @import url(./reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Roboto:wght@100;300;400;500;700&display=swap');
 
+:root {--narinci-reng:#FF8A56;}
 body {font-family: 'Roboto', sans-serif;}
 header {display: flex; justify-content: space-between; align-items: center; padding: 12px 20px;}
 header nav a {text-decoration: none;}
 .nav-links {display: none;}
+.introduction .left-side h1  span{
+    color: var(--narinci-reng)
+}
+.introduction .left-side {padding-top: 5px; padding-left: 20px;}
+section .left-side p {color:#666666;font: size 22px; font-weight: 400; margin-top: 27px; margin-bottom: 30px;}
+.button {background-color: black; color: beige;}
+section .left-side a {height: 36px; width: 91px; padding-right:40px;}
 
 
 
-@media(min-width:768px){ .nav-links{display: flex;} .bi-list{display: none;}}
+
+@media(min-width:768px){ .nav-links{display: flex;} .bi-list{display: none;} 
+.introduction {display: flex;}}
 /* mobile first */
 
 @media (min-width:1080px) {
     header {padding: 20px 112px;}
     .bi-list {display: none;}
+    .introduction .left-side h1 {font-size: 72px; font-weight: 700;}
+    .introduction .left-side {padding-left: 113px; padding-top: 117px;}
+    .introduction .right-side {padding-top: 70px;}
+
 }
 .nav-links > a {color: #222; margin-right: 40px;}
+
