@@ -10,24 +10,40 @@ header nav a {text-decoration: none;}
     color: var(--narinci-reng)
 }
 .introduction .left-side {padding-top: 5px; padding-left: 20px;}
-section .left-side p {color:#666666;font: size 22px; font-weight: 400; margin-top: 27px; margin-bottom: 30px;}
+section .left-side p {color:#666666;font-size 22px; font-weight: 200px; margin-top: 27px; margin-bottom: 30px;}
 .button {background-color: black; color: beige;}
-section .left-side a {height: 36px; width: 91px; padding-right:40px;}
+section .left-side a {height: 36px; width: 91px;}
+
+.introduction .right-side img {width: 100%; margin-top: 10px;}
+.introduction .left-side h1 {font-size: 38px;}
+.download {display: flex; text-align: center; justify-content: space-between;}
+
+@media (min-width:375px) { .introduction .right-side {background width: 300px;}     .introduction .right-side img {margin: auto; width: 100%;} }
 
 
 
 
-@media(min-width:768px){ .nav-links{display: flex;} .bi-list{display: none;} 
-.introduction {display: flex;}}
+
+
+@media(min-width:768px){ header {padding: 40px 30px ;} .nav-links{display:flex;} .bi-list{display: none;} 
+.nav-links a {margin-right: 30px;}
+.introduction {display: flex;} 
+.introduction .left-side {padding: 60px 30px;}
+.introduction .right-side {background-color: #fff; height: 100px; margin-right: 40px; margin: top 0;;}
+.introduction .right-side img { padding-right: 60px;} 
+.introduction .left-side h1 {font-size: 50px;} }
 /* mobile first */
 
-@media (min-width:1080px) {
+@media (min-width:1080px) { 
     header {padding: 20px 112px;}
+    .introduction {display: flex;}
     .bi-list {display: none;}
-    .introduction .left-side h1 {font-size: 72px; font-weight: 700;}
-    .introduction .left-side {padding-left: 113px; padding-top: 117px;}
-    .introduction .right-side {padding-top: 70px;}
+    .introduction .left-side h1 {font-size: 60px; font-weight: 700;}
+    .introduction .left-side {margin-left: 100px; margin-top: 117px;}
+    .introduction .right-side { margin-right: 80px;}
+    .introduction .right-side { width: 700px; padding-top: 40px;}}
+    .introduction .right-side img {width: 500px;}
 
 }
-.nav-links > a {color: #222; margin-right: 40px;}
+.nav-links > a {color: #222;}
 
